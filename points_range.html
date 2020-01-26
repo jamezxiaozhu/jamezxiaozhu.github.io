@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Data-Somm Project</title>
+  <title>James Zheng's Data-Somm Project</title>
   <link rel="stylesheet" href="bootstrap.min_sketchy.css">
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
@@ -50,26 +50,28 @@
     <div class="row mb-auto">
       <div class="col-md-8">
         <div class="jumbotron">
-          <h1 class="display-4">Does critic points even matter in wine?</h1>
+          <h2>How many points is a bottle of wine in the top 6 countries?</h2>
           <hr class="my-4">
-          <img src="visualizations/5_RegPriceVsPoints_World.png" alt="Linear Regression on Price vs. Points for Top 6 countries" class="img-thumbnail float-left mr-2 mb-1">
-          <p class="lead">We often use scores from renown wine critic such as Robert Parker to evaluate the quality of a wine. When it comes to price, does these scores affect the price? If so, by how much? And is there a variation between different countries?</p>
-          <p>The project is to test the hypothesis that there is a statistically significant relationship between the critic points and price of a particular wine.</p>
+          <img src="visualizations/3_PointRangeTop6.png" alt="Box Plot - Price of wine in top 6 countries" class="img-fluid d-block my-2 mx-2 rounded">
+          <p class="lead">This boxplot shows the details for points range across the top 6 countries by count in the data-set.</p>
+          <p>France has the highest mean points but Germany has the maximum (excluding outliers) whereas Chile and Portugal seem to have the lowest.</p>
         </div>
       </div>
       <div class="col-md-4"> 
         <div class="card mb-3">
-          <h3 class="card-header">Visualizations</h3>   
+          <h3 class="card-header">Visualizations</h3>
           <div class="thumbnail mx-2 my-2">
             <a href="price_range.html">
-              <img src="visualizations/2_PriceRangeTop6.png" alt="Price Range - Top 6 Countries" class='rounded img-thumbnail d-inline'>
+              <img src="visualizations/2_PriceRangeTop6.png" alt="Price Range - Top 6 Countries" class='rounded img-thumbnail'>
             </a>      
-          </div>
-          <div class="thumbnail mx-2 my-2">
-            <a href="points_range.html">
-              <img src="visualizations/3_PointRangeTop6.png" alt="Points Range - Top 6 Countries" class='rounded img-thumbnail d-inline'>
-            </a>
-          </div>  
+          </div> 
+          <span class="border border-info rounded mx-1 my-1">
+            <div class="thumbnail mx-2 my-2">
+              <a href="points_range.html">
+                <img src="visualizations/3_PointRangeTop6.png" alt="Points Range - Top 6 Countries" class='rounded img-thumbnail d-inline'>
+              </a>
+            </div>
+          </span>  
           <div class="thumbnail mx-2 my-2">
             <a href="price_points_world.html">
               <img src="visualizations/5_RegPriceVsPoints_World.png" alt="Pirce vs. Points - World" class='rounded img-thumbnail d-inline'>
@@ -77,7 +79,7 @@
           </div> 
           <div class="thumbnail mx-2 my-2">
             <a href="price_points_top6.html">
-              <img src="visualizations/7_RegPriceVsPoints_Top6_withlegend.png" alt="Pirce vs. Points - Top 6 Countries" class='rounded img-thumbnail d-inline'>  
+              <img src="visualizations/7_RegPriceVsPoints_Top6_withlegend.png" alt="Pirce vs. Points - Top 6 Countries" class='rounded img-thumbnail'>  
             </a>
           </div>
           <div class="card-footer text-muted">
@@ -87,8 +89,6 @@
       </div>
     </div>
   </div>
-
-
 </body>
 
 </html>
